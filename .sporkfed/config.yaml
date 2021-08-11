@@ -1,0 +1,8 @@
+version: 1
+files:
+  - source:
+      repo: github.com/sporkfed/test-source-1
+      path: source.yaml
+    destination:
+      path: test-source-1/source.yaml
+    
