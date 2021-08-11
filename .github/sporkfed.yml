@@ -1,3 +1,5 @@
+_extends: .github
+
 version: 1
 files:
   - source:
@@ -5,4 +7,3 @@ files:
       path: source.yaml
     destination:
       path: test-source-1/source.yaml
-    
