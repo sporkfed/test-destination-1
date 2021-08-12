@@ -3,7 +3,9 @@ _extends: .github
 version: 1
 rules:
   - upstream:
-      repo: sporkfed/test-source-1
+      repo:
+        owner: sporkfed
+        name: test-source-1
       branch: main
       path: source.yml
     target:
