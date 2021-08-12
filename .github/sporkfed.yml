@@ -10,3 +10,4 @@ rules:
       path: source.yml
     target:
       path: test-source-1/source.yml
+
