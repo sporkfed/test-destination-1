@@ -1,7 +1,7 @@
 _extends: .github
 
 version: 1
-files:
+rules:
   - source:
       repo: github.com/sporkfed/test-source-1
       path: source.yaml
