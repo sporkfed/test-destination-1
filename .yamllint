@@ -6,6 +6,9 @@ rules:
     max: 400
     level: warning
 
+  syntax:
+    level: warning
+
   indentation: disable
   document-start: disable
   brackets: disable
