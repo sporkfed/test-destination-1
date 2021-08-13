@@ -1,5 +1,6 @@
-name: Yaml Lint
-on: [ push ]
+name: "Yaml Lint"
+on:  # yamllint disable-line
+  - "push"
 jobs:
   yaml-lint:
     runs-on: ubuntu-latest
