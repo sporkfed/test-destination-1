@@ -13,6 +13,6 @@ jobs:
           pwd
           ls -lah ./
           tree
-          cat -A ./test-source-1/source.yaml
+          cat -A ./test-source-1/source.yml
       - name: yaml-lint
         uses: ibiqlik/action-yamllint@v3
