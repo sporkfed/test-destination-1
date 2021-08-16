@@ -18,5 +18,3 @@ jobs:
           sudo tree ./.git
       - name: yaml-lint
         uses: ibiqlik/action-yamllint@v3
-        with:
-          file_or_dir: ${{ github.workspace }}
