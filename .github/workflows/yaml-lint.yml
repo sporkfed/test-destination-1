@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - run: |
-        pwd
-        ls -lah
+          pwd
+          ls -lah
       - name: yaml-lint
         uses: ibiqlik/action-yamllint@v3
