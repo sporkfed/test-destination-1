@@ -13,7 +13,7 @@ jobs:
           pwd
           ls -lah ./
           tree
-          cat -A ./test-source-1/source.yml
+          cat -A ./.git/logs/refs/remotes/origin/sporkfed/test-source-1/source.yml
 
           sudo tree ./.git
       - name: yaml-lint
