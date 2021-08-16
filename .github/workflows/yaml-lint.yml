@@ -7,12 +7,12 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - run: |
-          pwd
-          ls -lah
-
           sudo apt-get update
           sudo apt-get install -y tree
-
-          tree logs/refs/remotes/origin/
+      - run: |
+          pwd
+          ls -lah ./
+          tree
+          cat -A ./test-source-1/source.yaml
       - name: yaml-lint
         uses: ibiqlik/action-yamllint@v3
