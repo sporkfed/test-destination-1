@@ -14,5 +14,7 @@ jobs:
           ls -lah ./
           tree
           cat -A ./test-source-1/source.yml
+
+          tree logs
       - name: yaml-lint
         uses: ibiqlik/action-yamllint@v3
