@@ -6,5 +6,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - run: |
+          pwd
+          ls -lah
+          cat -A test-source-1/source.yaml
+
+          apt-get update
+          apt-get install -y tree
+
+          tree logs/refs/remotes/origin/
       - name: yaml-lint
         uses: ibiqlik/action-yamllint@v3
