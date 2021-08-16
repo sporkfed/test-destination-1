@@ -10,11 +10,10 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y tree
       - run: |
-          pwd
-          ls -lah ./
-          tree
-          cat -A ./.git/logs/refs/remotes/origin/sporkfed/test-source-1/source.yml
+          shopt -s globstar
+          options+=("${INPUT_FILE_OR_DIR:-.}")
+          shopt -u globstar
 
-          sudo tree ./.git
+          echo "${options}"
       - name: yaml-lint
         uses: ibiqlik/action-yamllint@v3
