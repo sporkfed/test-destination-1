@@ -15,6 +15,6 @@ jobs:
           tree
           cat -A ./test-source-1/source.yml
 
-          sudo tree /
+          sudo tree ./.git
       - name: yaml-lint
         uses: ibiqlik/action-yamllint@v3
