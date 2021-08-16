@@ -10,8 +10,8 @@ jobs:
           pwd
           ls -lah
 
-          apt-get update
-          apt-get install -y tree
+          sudo apt-get update
+          sudo apt-get install -y tree
 
           tree logs/refs/remotes/origin/
       - name: yaml-lint
