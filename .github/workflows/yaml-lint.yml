@@ -9,7 +9,6 @@ jobs:
       - run: |
           pwd
           ls -lah
-          cat -A test-source-1/source.yaml
 
           apt-get update
           apt-get install -y tree
